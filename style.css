@@ -1,0 +1,179 @@
+html, body {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.navbar {
+  background: #124735;
+  align-content: center;
+}
+
+.navbar-brand p {
+  color: #ffffff;
+}
+
+.navbar-brand img {
+  width: 87px;
+}
+
+.navbar-nav ul li a {
+  color: #ffffff;
+  font-size: 100%;
+}
+
+.jumbotron {
+  height: 93vh;
+  background-image: url("./img/ofw-banner2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  border-radius: 0px;
+}
+
+.banner-text {
+  margin-top: 3.5rem;
+  color: #ffffff;
+  text-shadow: 1.5 !important;
+}
+
+.btns .rf-btn {
+  background-color: #124735;
+  color: #ffffff;
+  text-shadow: 0.5;
+}
+
+.btns .img-btn {
+  background-color: #1A237E;
+  color: #fff;
+}
+
+.header-section h3 {
+  color: #124735;
+}
+
+.feature-card h5 {
+  color: #124735;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+}
+.feature-card h6 {
+  color: #124735;
+  margin-top: 1rem;
+}
+.feature-card p {
+  padding-bottom: 2.5rem;
+}
+
+#features {
+  padding-top: 1.5rem;
+  padding-bottom: 4rem;
+  padding-left: 3rem;
+  padding-right: 2.75rem;
+}
+
+.intro {
+  background-color: #256141;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  margin: 0 !important;
+}
+
+#steps {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#steps h3 {
+  color: #124735;
+  margin-bottom: 0;
+}
+#steps .card img {
+  margin-top: 0 !important;
+}
+
+#tuts {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+#tuts h4 {
+  color: #124735;
+  margin-bottom: 0;
+}
+#tuts .card img {
+  margin-top: 0 !important;
+}
+
+#outline-btn a {
+  border-color: #fff !important;
+  color: #fff;
+}
+
+#watch_vids .indiv_cards {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+#watch_vids .indiv_cards h6 {
+  padding-top: 0px;
+}
+
+#watch a {
+  background-color: #124735;
+  color: #fff;
+  border: 0px;
+  margin-top: 0.5rem;
+  margin-bottom: 0rem !important;
+}
+
+.vidframe {
+  max-width: 500px;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.email-submit {
+  color: #fff;
+  border-color: #fff;
+}
+
+#email {
+  background-color: #256141;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  margin: 0 !important;
+}
+#email h3 {
+  color: #fff;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+#app h3 {
+  color: #124735;
+  padding-top: 2rem;
+  font-weight: bolder;
+}
+
+.app img {
+  width: 280px;
+}
+
+.app-desc h4 {
+  color: #124735;
+}
+
+.google-play img {
+  width: 150px;
+}
+
+footer {
+  background-color: #124735;
+  height: 40px;
+}
+footer p {
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
