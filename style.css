@@ -135,6 +135,39 @@ html, body {
   font-size: 200%;
 }
 
+.utils {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.utils h3 {
+  color: #256141;
+}
+.utils a {
+  background-color: #256141;
+  border: 0;
+}
+
+.pay-opt {
+  width: 250px;
+}
+
+.email-submit {
+  color: #fff;
+  border-color: #fff;
+}
+
+#email {
+  background-color: #256141;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin: 0 !important;
+}
+#email h3 {
+  color: #fff;
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
 footer {
   background-color: #124735;
   height: 40px;
