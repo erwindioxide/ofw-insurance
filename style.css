@@ -34,23 +34,24 @@ html, body {
 }
 
 .banner-text {
-  margin-top: 3.5rem;
+  margin-top: 4.5rem;
   color: #ffffff;
-  text-shadow: 1.5 !important;
+  font-weight: bold;
+  text-shadow: 2px 2px #2d2d2e;
 }
 
 .btns .rf-btn {
-  background-color: #124735;
-  color: #ffffff;
+  background-color: #fff;
+  color: #124735;
   text-shadow: 0.5;
 }
 
 .btns .img-btn {
-  background-color: #1A237E;
+  background-color: #256141;
   color: #fff;
 }
 
-.header-section h3 {
+.header-section h2 {
   color: #124735;
 }
 
@@ -68,9 +69,9 @@ html, body {
 }
 
 #features {
-  padding-top: 1.5rem;
-  padding-bottom: 4rem;
-  padding-left: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
   padding-right: 2.75rem;
 }
 
@@ -93,15 +94,15 @@ html, body {
   margin-top: 0 !important;
 }
 
-#tuts {
+#easy {
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
-#tuts h4 {
+#easy h3 {
   color: #124735;
   margin-bottom: 0;
 }
-#tuts .card img {
+#easy .card img {
   margin-top: 0 !important;
 }
 
@@ -110,26 +111,17 @@ html, body {
   color: #fff;
 }
 
-#watch_vids .indiv_cards {
+#indiv_steps .indiv_cards {
   padding-right: 1rem;
   padding-left: 1rem;
 }
-#watch_vids .indiv_cards h6 {
-  padding-top: 0px;
+#indiv_steps .indiv_cards h5 {
+  padding-top: 3px;
 }
 
-#watch a {
-  background-color: #124735;
-  color: #fff;
-  border: 0px;
-  margin-top: 0.5rem;
-  margin-bottom: 0rem !important;
-}
-
-.vidframe {
-  max-width: 500px;
-  padding-top: 0 !important;
-  margin-top: 0 !important;
+.learn-more {
+  background-color: #256141 !important;
+  border: 0 !important;
 }
 
 .email-submit {
