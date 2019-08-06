@@ -136,6 +136,11 @@ html, body {
   margin: 0 !important;
 }
 
+.modLabel {
+  color: #256141;
+  font-weight: bolder;
+}
+
 .fab {
   font-size: 200%;
 }
@@ -148,6 +153,11 @@ html, body {
   color: #256141;
 }
 .utils a {
+  background-color: #256141;
+  border: 0;
+}
+
+.primerSubmit {
   background-color: #256141;
   border: 0;
 }
