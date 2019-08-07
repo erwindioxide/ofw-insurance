@@ -3,10 +3,24 @@ AddtoAny Links for Sharing
 <--OFW Insurance -->
 
 Messenger
-https://www.facebook.com/dialog/send?app_id=5303202981&display=popup&link=https%3A%2F%2Frampver.com%2Fofw-insurance%2F&redirect_uri=https%3A%2F%2Fstatic.addtoany.com%2Fmenu%2Fthanks.html%23url%3Dhttps%3A%2F%2Frampver.com%2Fofw-insurance%2F
+https://www.addtoany.com/add_to/facebook_messenger?linkurl=https%3A%2F%2Frampver.com%2Fofw-insurance%2F=Rampver%20OFW%20Insurance&linknote=Rampver%20OFW%20Insurance
 
 Facebook
-https://www.facebook.com/dialog/share?app_id=5303202981&display=popup&href=https%3A%2F%2Frampver.com%2Fseedbox%2F&redirect_uri=https%3a%2f%2fstatic.addtoany.com%2fmenu%2fthanks.html%23url%3dhttps%3A%2F%2Frampver.com%2Fseedbox%2F
+https://www.facebook.com/dialog/share?app_id=5303202981&display=popup&href=https%3A%2F%2Frampver.com%2Fofw-insurance%2F&redirect_uri=https%3a%2f%2fstatic.addtoany.com%2fmenu%2fthanks.html%23url%3dhttps%3A%2F%2Frampver.com%2Fofw-insurance%2F
+
+WeChat
+https://www.addtoany.com/ext/wechat/share/#url=https%3A%2F%2Frampver.com%2Fofw-insurance%2F&title=Rampver%20OFW%20Insurance
+
+LINE
+https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Frampver.com%2Fofw-insurance
+
+SKYPE
+https://web.skype.com/share?url=https%3A%2F%2Frampver.com%2Fofw-insurance% (not working)
+
+SMS
+sms:?&body=Rampver%20OFW%20Insurance%20https%3A%2F%2Frampver.com%2Fofw-insurance%
+
+
 
 <--Seedbox -->
 
@@ -17,3 +31,5 @@ Facebook
 https://www.facebook.com/dialog/share?app_id=5303202981&display=popup&href=https%3A%2F%2Frampver.com%2Fseedbox%2F&redirect_uri=https%3a%2f%2fstatic.addtoany.com%2fmenu%2fthanks.html%23url%3dhttps%3A%2F%2Frampver.com%2Fseedbox%2F
 
 ** /&success=1 redirects handled by core WP site
+
+
