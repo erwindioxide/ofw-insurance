@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" src="./style.css" href="./style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-   <link rel="icon" href="./img/favicon.png" type="image/png" sizes="16x20"> 
+    <link rel="icon" href="./img/favicon.png" type="image/png" sizes="16x20"> 
 
     <title>Rampver OFW Insurance</title>
 
@@ -54,7 +54,7 @@
               <a class="nav-link" href="#pay">How to Pay</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">How to Claim</a>
+              <a class="nav-link" href="./claims.html">How to Claim</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Downloads</a>
@@ -79,17 +79,21 @@
       
       <div class="banner-text">
       	<h1 class="text-center font-weight-bold">Affordable Insurance Coverage Package for OFWs.</h1>
-	     <h5 class= "mt-4 text-center container">Lorem Ipsum dolor sit amet.</h5>
+	     <h2 class= "mt-4 text-center container">Get yours for only<strong style="color: #e0a853;"> USD 70!</strong></h2>
       </div>
       <div class="overlay-cover"></div>
 
+      <!-- <p class="text-center">
+        <img src="./img/badge.png" class="img-fluid priceBadge">
+      </p> -->
+
       <h2 class="text-center mt-5 btns">
-        <a href="https://www.seedbox.ph/#/sign-up/register/RAMPVER" class="btn btn-lg mt-1 mb-1 rf-btn"><strong>Apply now!</strong></a>
+        <a href="#easy" class="btn btn-lg mt-1 mb-1 rf-btn py-1"><strong>Apply now!</strong></a>
         <br>
-        <a href="https://goo.gl/forms/3rJSHrwyi2sW2CVv1" class="btn img-btn py-1 px-3">See Benefits</a>
+        <a href="https://goo.gl/forms/3rJSHrwyi2sW2CVv1" class="btn img-btn py-1 px-3" data-toggle="modal" data-target="#primerModal">Get our Primer</a>
       </h2>
 
-      <div class="login text-center">
+      <div class="login text-center have-questions">
       	<p class="mt-3 text-center text-white pt-4">Have questions?<a href="https://www.seedbox.ph/#/login" class="text-white font-weight-bold">  Message us.</a></p>
       </div>
     </div>
@@ -97,11 +101,11 @@
   <!-- end of banner -->
 
   <!-- start of feature section -->
-  <div class="container-fluid" id="features">
+  <div class="container-fluid px-4" id="features">
    
         <div class="header-section text-center" data-aos="fade-up">
-          <h2 class="mb-2 font-weight-bold">Product Highlights</h2>
-          <h6 class="lead text-secondary pb-1" data-aos="fade-up">Avail the protection for our modern day Filipino heroes.</h6>
+          <h2 class="mb-2 font-weight-bold">OFW Insurance Package</h2>
+          <h6 class="lead text-secondary pb-1" data-aos="fade-up">Avail our affordable protection package for our modern-day Filipino heroes.</h6>
         </div>
         <br>
    
@@ -113,7 +117,7 @@
               <img src="./img/guarantee.png" class="card-img-top highlights">
             </p>
             <div class="feature-body">
-              <h5 class="feature-title text-center font-weight-bold">Guaranteed Approval and Issue</h5>
+              <h5 class="feature-title text-center">Guaranteed Approval and Issue</h5>
               <p>Are you an overseas Filipino worker? You can get this insurance product with guaranteed approval and issuance.</p>
             </div>
           </div>
@@ -125,7 +129,7 @@
               <img src="./img/no-medical.png" class="card-img-top highlights">
             </p>
             <div class="feature-body">
-              <h5 class="feature-title text-center font-weight-bold">No Medical Exams needed</h5>
+              <h5 class="feature-title text-center">No Medical Exams needed</h5>
               <p>All you need to is to fill out our application form, pay your premiums, and submit the required documents. No medical exams/ underwriting needed.</p>
             </div>
           </div>
@@ -137,7 +141,7 @@
               <img src="./img/globe-clock.png" class="card-img-top highlights">
             </p>
             <div class="feature-body">
-              <h5 class="feature-title text-center font-weight-bold">Apply Anywhere, Anytime!</h5>
+              <h5 class="feature-title text-center">Apply Anywhere, Anytime!</h5>
               <p>Currently abroad? No problem! You can apply and get your policy anywhere around the world. Submit your documents anytime!</p>
             </div>
           </div>
@@ -150,7 +154,7 @@
               <img src="./img/contestability.png" class="card-img-top highlights">
             </p>
             <div class="feature-body">
-              <h5 class="feature-title text-center font-weight-bold">No Contestability Period</h5>
+              <h5 class="feature-title text-center">No Contestability Period</h5>
               <p>Unlike other insurance products, our OFW insurance product has no contestability period and is effective immediately upon policy issuance.</p>
             </div>
           </div>
@@ -161,9 +165,9 @@
 
 <!-- start of benefits section -->
 <div class="benefits" id="benefits">
-  <h2 class="text-white text-center font-weight-bold">Product Benefits</h2>
-  <h6 class="lead text-white pb-4 text-center mx-3" data-aos="fade-up">Bacon Cheeseburger Insurance for all.</h6>
-  <div class="row m-0">
+  <h2 class="text-white text-center font-weight-bold">OFW Insurance Package Benefits</h2>
+<!--   <h6 class="lead text-white pb-4 text-center mx-3" data-aos="fade-up">Bacon Cheeseburger Insurance for all.</h6>
+ -->  <div class="row m-0">
     <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up">
       <div class="container">
         <p class="text-center">
@@ -174,17 +178,16 @@
     <div class="col-lg-6 col-md-6 col-sm-12 mx-0">
       <div class="align-left">
         <br>
-          <h4 class="align-left text-white px-3" data-aos="fade-up">With this OFW insurance, you will be getting the following packages and benefits.</h4>
-        <div class="container">
+          <h4 class="align-left text-white px-3" data-aos="fade-up">For only <strong style="color: #cc8b29">USD 70</strong>, you are entitled the following packages and benefits:</h4>
+        <div class="container mt-5">
           <p class="text-white lead" data-aos="fade-up"><i class="fas fa-check-circle mr-3 text-white"></i>Natural death, with at least $10,000 survivor’s benefit.</p>
           <p class="text-white lead" data-aos="fade-up"><i class="fas fa-check-circle mr-3 text-white"></i>Accidental death, with at least $15,000 survivor’s benefit.</p>
           <p class="text-white lead" data-aos="fade-up"><i class="fas fa-check-circle mr-3 text-white"></i>Permanent total disablement & dismemberment, $7,500 disability benefit.</p>
           <p class="text-white lead" data-aos="fade-up"><i class="fas fa-check-circle mr-3 text-white"></i>Repatriation Benefit - transport of OFW back to the Philippines including personal belongings.</p>
         </div>
           <p id="outline-btn" class="text-center"  data-aos="fade-up">
-            <a href="#" class="btn btn-outline-success">See Full Benefits</a>
+            <a href="#" class="btn btn-outline-success btn-lg">See Full Benefits</a>
           </p>
-      
       </div>
     </div>
   </div>
@@ -194,7 +197,7 @@
 
 <!-- start of easy steps section -->
  <div class="container-fluid" id="easy">
-  <h3 class="text-center font-weight-bold" id="steps" data-aos="fade-up">Apply and get your insurance coverage in just 3 easy steps!</h3>
+  <h3 class="text-center font-weight-bold px-3" id="steps" data-aos="fade-up">Apply and get your insurance coverage in just 3 easy steps!</h3>
   <br>
     <div class="row" id="indiv_steps">
 
@@ -204,7 +207,7 @@
                 <img src="./img/DLANDFORM-01.png" class="card-img-top px-5 mb-3 procedure">
               </p>
               <h3 class="text-center font-weight-bold">Step 1</h3>
-              <h6 class="feature-title text-center mt-3 lead">Download, print, fill out and sign the OFW insurance application form.</h6>
+              <h5 class="feature-title text-center mt-3 px-4">Download, print, fill out and sign the OFW insurance application form.</h5>
           </div>
         </div>  <!-- end of featurette 1-->
 
@@ -214,7 +217,7 @@
               <img src="./img/B4-01.png" class="card-img-top px-5 mb-3 procedure">
             </p>
               <h3 class="text-center font-weight-bold">Step 2</h3>
-              <h6 class="feature-title text-center mt-3 lead">Pay for the insurance premium through your preferred payment center or portal.</h6>
+              <h5 class="feature-title text-center mt-3 px-4">Pay for the insurance premium through your preferred payment center or portal.</h5>
           </div>
         </div>  <!-- end of featurette 1-->
 
@@ -224,7 +227,7 @@
               <img src="./img/submit-01.png" class="px-5 card-img-top mb-3 procedure">
             </p>
               <h3 class="text-center font-weight-bold">Step 3</h3>
-              <h6 class="feature-title text-center mt-3 lead">Upload the signed application form, other requirements, and the proof of payment for checking and approval.</h6>
+              <h5 class="feature-title text-center mt-3 px-4">Upload the signed application form, other requirements, and the proof of payment for checking and approval.</h5>
           </div>
         </div>  <!-- end of featurette 1-->
   </div>
@@ -247,7 +250,7 @@
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12">
           <br>
-          <h4 class="text-left text-white px-3 mt-2" data-aos="fade-up">Know more about our OFW insurance, application process, different payment methods and claims process in one handy PDF primer ebook!</h4>
+          <h4 class="text-left text-white px-3 mt-2 know-more" data-aos="fade-up">Know more about our OFW insurance, application process, different payment methods and claims process in one handy PDF primer ebook!</h4>
           <p id="outline-btn" class="text-center"  data-aos="fade-up">
             <a href="#" class="btn btn-outline-success btn-lg mt-3" data-toggle="modal" data-target="#primerModal">Get the Primer!</a>
           </p>
@@ -378,7 +381,7 @@
   <div class="row m-0" id="pay">
     <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up">
         <h3 class="text-center font-weight-bold mt-2">Easy Payment Methods</h3>
-        <p class="text-center text-secondary lead">Bacon Ipsum dolor sit amet.</p>
+        <p class="text-center text-secondary lead">Choose your preferred payment option</p>
         <p class="text-center">
           <img src="./img/PAY-01.png" class="card-img-top pay-opt">
         </p>
@@ -392,7 +395,7 @@
     <div class="col-lg-6 col-md-6 col-sm-12 mx-0"  data-aos="fade-up">
     <div id="submit"></div>
       <h3 class="text-center font-weight-bold mt-2">Submit your Application</h3>
-        <p class="text-center text-secondary lead">Bacon Ipsum dolor sit amet.</p>
+        <p class="text-center text-secondary lead">Apply online - anywhere, anytime!</p>
         <p class="text-center">
           <img src="./img/DLANDFORM-01.png" class="card-img-top pay-opt">
         </p>

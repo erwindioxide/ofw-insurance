@@ -18,9 +18,13 @@ SKYPE
 https://web.skype.com/share?url=https%3A%2F%2Frampver.com%2Fofw-insurance% (not working)
 
 SMS
-sms:?&body=Rampver%20OFW%20Insurance%20https%3A%2F%2Frampver.com%2Fofw-insurance%
+sms:?&body=Rampver%20OFW%20Insurance%20https%3A%2F%2Frampver.com%2Fofw-insurance
 
+EMAIL
+https://www.addtoany.com/add_to/email?linkurl=https%3A%2F%2Frampver.com%2Fofw-insurance%2F&linkname=Rampver%20OFW%20Insurance&linknote=Rampver%20OFW%20Insurance
 
+EVERNOTE
+https://www.evernote.com/clip.action?url=https%3A%2F%2Frampver.com%2Fofw-insurance%2F&title=Rampver%20OFW%20Insurance
 
 <--Seedbox -->
 
@@ -31,5 +35,8 @@ Facebook
 https://www.facebook.com/dialog/share?app_id=5303202981&display=popup&href=https%3A%2F%2Frampver.com%2Fseedbox%2F&redirect_uri=https%3a%2f%2fstatic.addtoany.com%2fmenu%2fthanks.html%23url%3dhttps%3A%2F%2Frampver.com%2Fseedbox%2F
 
 ** /&success=1 redirects handled by core WP site
+
+
+
 
 

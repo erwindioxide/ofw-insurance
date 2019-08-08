@@ -3,7 +3,7 @@ html, body {
   margin: 0 !important;
   width: 100% !important;
   box-sizing: border-box;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -22,12 +22,17 @@ html, body {
 
 .navbar-nav ul li a {
   color: #ffffff;
-  font-size: 100%;
+  font-size: 80%;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 85%;
 }
 
 .jumbotron {
   height: 93vh;
-  background-image: url("./img/ofw-banner2.png");
+  background-image: url("./img/people.png");
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -37,8 +42,10 @@ html, body {
 .banner-text {
   margin-top: 4.5rem;
   color: #ffffff;
-  font-weight: bold;
-  text-shadow: 2px 2px #2d2d2e;
+}
+
+.priceBadge {
+  width: 100px;
 }
 
 .btns .rf-btn {
@@ -57,17 +64,14 @@ html, body {
 }
 
 .feature-card h5 {
-  color: #124735;
   margin-top: 1.25rem;
   margin-bottom: 1rem;
 }
 .feature-card h6 {
-  color: #124735;
   margin-top: 1rem;
 }
 
 #features {
-  padding-top: 2rem;
   padding-bottom: 3rem;
   padding-left: 2rem;
   padding-right: 2.75rem;
@@ -76,7 +80,7 @@ html, body {
 .benefits {
   background-color: #256141;
   padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   margin: 0 !important;
 }
 
@@ -132,18 +136,21 @@ html, body {
 
 .primer {
   background-color: #256141;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 1.5rem;
   margin: 0 !important;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 340px) {
   .primerIMG, .benefitsIMG {
-    width: 250px;
+    width: 175px;
+  }
+
+  .partner {
     width: 300px;
   }
 }
-@media (min-width: 400px) {
+@media (min-width: 520px) {
   .primerIMG, .benefitsIMG {
     width: 375px;
   }
@@ -162,8 +169,8 @@ html, body {
 }
 
 .utils {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .utils h3 {
   color: #256141;
@@ -197,6 +204,11 @@ html, body {
   color: #fff;
   padding-bottom: 0.5rem !important;
   margin-bottom: 0.5rem !important;
+}
+
+.claimHeader, .accHead, .stepHeader {
+  color: #256141 !important;
+  font-weight: bold;
 }
 
 footer {
