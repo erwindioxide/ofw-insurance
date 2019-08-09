@@ -71,6 +71,9 @@ html, body {
 .feature-card h6 {
   margin-top: 1rem;
 }
+.feature-card h4 {
+  color: #256141;
+}
 
 .feature-title {
   color: #124735;
@@ -156,6 +159,23 @@ html, body {
   .partner {
     width: 300px;
   }
+
+  .check-success {
+    width: 100px;
+  }
+}
+@media (min-width: 340px) {
+  .primerIMG, .benefitsIMG {
+    width: 175px;
+  }
+
+  .partner {
+    width: 300px;
+  }
+
+  .check-success {
+    width: 100px;
+  }
 }
 @media (min-width: 520px) {
   .primerIMG, .benefitsIMG {
@@ -164,6 +184,10 @@ html, body {
 
   .partner {
     width: 500px;
+  }
+
+  .check-success {
+    width: 150px;
   }
 }
 .modLabel {
@@ -216,6 +240,10 @@ html, body {
 .claimHeader, .accHead, .stepHeader {
   color: #256141 !important;
   font-weight: bold;
+}
+
+.backHome {
+  background-color: #256141;
 }
 
 footer {
