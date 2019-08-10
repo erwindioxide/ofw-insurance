@@ -16,7 +16,7 @@
 
    <link rel="icon" href="./img/favicon.png" type="image/png" sizes="16x20"> 
 
-    <title>Rampver OFW Insurance | Submit Application</title>
+    <title>Rampver OFW Insurance | Contact Us</title>
 
     <!-- Google Tag Manager -->
 	<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -78,43 +78,59 @@
 
 <div class="container px-3">
   <p class="text-center px-3">
-    <div class="card">
+    <div class="container">
+      <p class="text-center">
+        <img src="./img/contact-01.png" class="img-fluid" style="width: 100px;">
+      </p>
+      <h3 class="text-center claimHeader">Contact Us</h3>
+      <p class="text-secondary text-center">Have questions or concerns? Let us know and we'll gladly answer your queries. Thank you!</p>
+      <br>
+      <br>
 
-      <h3 class="text-center">Contact Us</h3>
-      
+      <!-- START OF GFORM  -->
       <script type="text/javascript">var submitted=false;</script>
-     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='https://hopeful-murdock-24bf39.netlify.com/submitsuccess-thankyou';}"></iframe>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+      onload="if(submitted) {window.location='https://hopeful-murdock-24bf39.netlify.com/submitsuccess-thankyou';}"></iframe>
 
-      <form action="https://docs.google.com/forms/d/e/1FAIpQLSfAE9ASM38IkUQvIzr75Df6impvZnXUIvNk12xTf49ssXJr3w/formResponse" target="hidden_iframe" method="POST">
+
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSfAE9ASM38IkUQvIzr75Df6impvZnXUIvNk12xTf49ssXJr3w/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" class="px-5">
 
         <div class="form-group">
-          <label>Name:</label>
-          <input type="text" name="entry.295856353" class="form-control">
+          <label class="claimHeader">Name:</label>
+          <input type="text" name="entry.295856353" class="form-control" required>
         </div>
 
         <div class="form-group">
-          <label>Email:</label>
-          <input type="text" name="entry.933785881" class="form-control">
+          <label class="claimHeader">Email:</label>
+          <input type="text" name="entry.933785881" class="form-control" required>
         </div>
 
         <div class="form-group">
-          <label>Contact Number:</label>
-          <input type="text" name="entry.757259150" class="form-control">
+          <label class="claimHeader">Contact Number:</label>
+          <input type="text" name="entry.757259150" class="form-control" required="">
         </div>
 
         <div class="form-group">
-          <label>Your message:</label>
-          <input type="textarea" name="entry.2022739378" class="form-control">
+          <label class="claimHeader">Your message:</label>
+          <input type="textarea" name="entry.2022739378" class="form-control py-5" required="">
         </div>
 
-        <input type="submit" class="btn btn-success" value="Send" />
-        
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="privacy" id="privacy" required>
+          <p class="text-secondary form-check-label" for="privacy">I agree to this site's <a href="https://rampver.com/privacy">terms and conditions.</a></p>
+        </div>
+
+        <p class="text-center">
+          <input type="submit" class="btn backHome text-white px-5" value="Submit" />
+        </p>
       </form>
+      <!-- End of GFORM -->
     </div>
   </p>
 </div>
 
-
+<br>
+<br>
 
 
 <!-- https://script.google.com/a/rampver.com/macros/s/AKfycbyF4GlwjSidNOjt1KWK1w3Uwihrw3wd-h8umHYyIUOOxUKG9J0M/exec -->
