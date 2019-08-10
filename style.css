@@ -27,7 +27,11 @@ html, body {
 
 .nav-link {
   color: #ffffff;
-  font-size: 85%;
+  font-size: 90%;
+}
+
+.navbar-toggler {
+  border: 0 !important;
 }
 
 .jumbotron {
@@ -98,6 +102,10 @@ html, body {
   max-width: 175px;
 }
 
+.procedure {
+  width: 250px;
+}
+
 #steps {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -156,7 +164,7 @@ html, body {
     width: 300px;
   }
 
-  .check-success, .procedure {
+  .check-success {
     width: 100px;
   }
 }
@@ -169,7 +177,7 @@ html, body {
     width: 300px;
   }
 
-  .check-success, .procedure {
+  .check-success {
     width: 100px;
   }
 }
@@ -182,7 +190,7 @@ html, body {
     width: 500px;
   }
 
-  .check-success, .procedure {
+  .check-success {
     width: 150px;
   }
 }
