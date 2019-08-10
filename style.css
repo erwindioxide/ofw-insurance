@@ -98,10 +98,6 @@ html, body {
   max-width: 175px;
 }
 
-.procedure {
-  width: 300px;
-}
-
 #steps {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -160,7 +156,7 @@ html, body {
     width: 300px;
   }
 
-  .check-success {
+  .check-success, .procedure {
     width: 100px;
   }
 }
@@ -173,7 +169,7 @@ html, body {
     width: 300px;
   }
 
-  .check-success {
+  .check-success, .procedure {
     width: 100px;
   }
 }
@@ -186,7 +182,7 @@ html, body {
     width: 500px;
   }
 
-  .check-success {
+  .check-success, .procedure {
     width: 150px;
   }
 }
