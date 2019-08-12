@@ -88,10 +88,10 @@
       <br>
       <br>
 
-    <div class="container px-3">
+  <div class="container px-3" data-aos="fade-up">
 
   <!-- START -->
-     <form action="https://rampver.com/testofwpage/#wpcf7-f11670-p11673-o1" method="post" class="wpcf7-form mailchimp-ext-0.4.51" enctype="multipart/form-data" novalidate="novalidate">
+<form action="https://rampver.com/testofwpage/#wpcf7-f11670-p11673-o1" method="post" enctype="multipart/form-data">
     <div style="display: none;">
     <input type="hidden" name="_wpcf7" value="11670">
     <input type="hidden" name="_wpcf7_version" value="5.1.4">
@@ -100,84 +100,107 @@
     <input type="hidden" name="_wpcf7_container_post" value="11673">
     </div>
 
+  <div class="d-flex">
+    <i class="fas fa-info-circle claimHeader" style="font-size: 170%"></i>
+    <h4 class="claimHeader text-left ml-2">Personal Information</h4>
+  </div>
+  <br>
   <div class="form-group mb-3">
     <label class="claimHeader">First Name</label>
-    <input type="text" name="firstName" value="" size="40" class="wpcf7-form-control form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="First Name" required>
+    <input type="text" name="firstname" class="form-control" placeholder="First Name" required>
   </div>
 
   <div class="form-group mb-3">
     <label class="claimHeader">Last Name</label>
-    <input type="text" name="lastName" value="" size="40" class="wpcf7-form-control wpcf7-text form-control wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Last Name" required>
+    <input type="text" name="lastname" class="form-control" placeholder="Last Name" required>
   </div>
 
    <div class="form-group mb-3">
     <label class="claimHeader">Email Address</label>
-    <input type="email" name="email" size="40" class="wpcf7-form-control form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required>
+    <input type="email" name="email"  placeholder="Email Address" class="form-control" required>
+  </div>
+
+  <div class="form-group mb-3">
+      <label class="claimHeader">Birthday</label>
+      <input type="date" name="birthday" class="form-control" required>
   </div>
 
   <div class="d-flex row m-0 mb-3">
-
        <div class="form-group">
         <label class="claimHeader">Work Location/ Destination</label>
-        <input type="text" name="workDestination" value="" size="40" class="wpcf7-form-control form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Work Destination" required>
+        <input type="text" name="workdestination" class="form-control" placeholder="Work Destination" required>
       </div>
 
       <div class="form-group ml-3">
         <label class="claimHeader">Contract Start Date</label>
-        <input type="date" name="startDate" value="Start Date" class="wpcf7-form-control wpcf7-date form-control wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false" required>
+        <input type="date" name="startdate" class="form-control" required>
       </div>
 
       <div class="form-group ml-3">
         <label class="claimHeader">Contract End Date</label>
-        <input type="date" name="endDate" value="End Date" class="wpcf7-form-control wpcf7-date form-control wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false" required>
+        <input type="date" name="enddate" class="form-control" required>
       </div>
+  </div>
+  <br>
 
+   <div class="d-flex">
+    <i class="fas fa-upload claimHeader" style="font-size: 170%"></i>
+    <h4 class="claimHeader text-left ml-2">Upload Documents</h4>
   </div>
 
-
+  <br>
   <div class="form-group mb-3">
-    <label class="claimHeader">Upload RF Data Privacy Form</label>
-    <small>File Limit: 5MB</small>
-    <input type="file" name="dpc" size="40" class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required form-control" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx," aria-required="true" aria-invalid="false" required>
+    <label class="claimHeader">Upload RF Data Privacy Form</label> &nbsp;
+    <small class="text-secondary font-italic">File Limit: 5MB</small>
+    <input type="file" name="dpc" class="form-control" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.svg.,.JPEG,.JPG,.PNG,.DOC,.PDF,.DOCX" required>
   </div>
 
   <div class="form-group mb-3">
-    <label class="claimHeader">Upload OFW Insurance Application Form</label>
-    <small>File Limit: 5MB</small>
-    <input type="file" name="appForm" size="40" class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required form-control" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx," aria-required="true" aria-invalid="false" required>
+    <label class="claimHeader">Upload OFW Insurance Application Form (FRONT PAGE)</label>&nbsp;
+    <small class="text-secondary font-italic">File Limit: 5MB</small>
+    <input type="file" name="appform" class="form-control" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.svg.,.JPEG,.JPG,.PNG,.DOC,.PDF,.DOCX" required>
+  </div>
+
+  <div class="form-group mb-3">
+    <label class="claimHeader">Upload OFW Insurance Application Form (BACK PAGE)</label>&nbsp;
+    <small class="text-secondary font-italic">File Limit: 5MB</small>
+    <input type="file" name="appformbackpage" class="form-control" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.svg.,.JPEG,.JPG,.PNG,.DOC,.PDF,.DOCX" required>
   </div>
 
   <div class="form-group mb-3">
     <label class="claimHeader">Upload Valid Passport</label>
-    <small>With Photo and Signature</small>
-    <small>File Limit: 5MB</small>
-    <input type="file" name="passport" size="40" class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required form-control" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx," aria-required="true" aria-invalid="false" required>
+    <small class="text-secondary font-italic">File Limit: 5MB</small>
+    <input type="file" name="passport" class="form-control" placeholder="File Limit is 5 MB"accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.svg.,.JPEG,.JPG,.PNG,.DOC,.PDF,.DOCX" required>
+  </div>
+
+  <div class="form-group mb- 3">
+    <label class="claimHeader">Upload Working Visa/Work Permit</label>&nbsp;
+    <small class="text-secondary font-italic">File Limit: 5MB</small>
+    <input type="file" name="workpermit" class="form-control" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.svg.,.JPEG,.JPG,.PNG,.DOC,.PDF,.DOCX" required>
   </div>
 
   <div class="form-group mb-3">
-    <label class="claimHeader">Upload Working Visa/Work Permit</label>
-    <small>File Limit: 5MB</small>
-    <input type="file" name="workPermit" size="40" class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required form-control" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx," aria-required="true" aria-invalid="false" required>
+    <label class="claimHeader">Upload Proof of Payment</label>&nbsp;
+    <small class="text-secondary font-italic">File Limit: 5MB</small>
+    <input type="file" name="payment" class="form-control" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.svg.,.JPEG,.JPG,.PNG,.DOC,.PDF,.DOCX" required>
   </div>
 
-  <div class="form-group mb-3">
-    <label class="claimHeader">Upload Proof of Payment</label>
-    <small>File Limit: 5MB</small>
-    <input type="file" name="payment" size="40" class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required form-control" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx," aria-required="true" aria-invalid="false" required>
+   <div class="form-check" data-aos="fade-up">
+    <input type="checkbox" class="form-check-input" name="privacy" id="privacy" required>
+    <p class="text-secondary form-check-label" for="privacy">I agree to this site's <a href="https://rampver.com/privacy">terms and conditions.</a></p>
   </div>
 
   <p class="text-center mt-4 mb-4">
-    <input type="submit" value="Submit Application" class=" text-white wpcf7-form-control wpcf7-submit btn btn-lg primerSubmit">
+    <input type="submit" value="Submit Application" id="trigger" class="text-white btn btn-lg primerSubmit">
   </p>
 
-    
+  <p class="text-center">
+    <img src="./img/preloader.gif" id="preloader" class="d-none" style="width: 25px;">
+  </p>
 
   </form>
   <!-- END -->
 </div>
-
-      
-
 
       
     </div>
@@ -219,6 +242,15 @@
     <script>
       AOS.init();
     </script>
+
+<script>
+  document.getElementById("trigger").addEventListener("click", function(){
+      document.getElementById("preloader").classList.remove('d-none');
+        setTimeout(function(){
+         document.getElementById("preloader").classList.add('d-none');
+        }, 15000);
+    })
+</script>
 
     <!-- Google Tag Manager (noscript) -->
 <!-- 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDNB9LX"
