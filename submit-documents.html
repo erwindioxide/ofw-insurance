@@ -67,6 +67,7 @@
     </nav>
 
 
+
     <!-- start of submit form -->
 
     <div class="container px-3">
@@ -77,14 +78,29 @@
                     <img src="./img/DLANDFORM-01.png" class="img-fluid" style="width: 150px;" data-aos="fade-up">
                 </p>
                 <h4 class="text-center claimHeader" data-aos="fade-up">Submit Application Documents</h4>
-                <p class="text-secondary text-center" data-aos="fade-up">Submit your insurance application documents for review and verification.</p>
+                <p class="text-secondary text-center mb-3" data-aos="fade-up">Submit your insurance application documents for review and verification.</p>
+
+                <p class="text-center font-italic font-weight-bold text-secondary mb-3" data-aos="fade-up">Choose your preferred submission method:</p>
+
+                <div class="text-center mb-2" data-aos="fade-up">          
+                    <a class="mailtoui btn backHome text-white btn-lg mt-2" href="mailto:ofwinsurance@rampver.com"><i class="far fa-envelope text-white mr-2"></i>Email Documents</a>
+                </div>
+
+                <div class="text-center" data-aos="fade-up">          
+                    <button class="btn backHome text-white btn-lg mt-2 px-4" onclick="showForm()"><i class="fas fa-upload text-white mr-4"></i>Upload Online</button>
+                </div>
+                
                 <br>
                 <br>
 
-                <div class="container px-3" data-aos="fade-up">
+                <div class="container px-3 d-none" id="submitFormshow">
+
+                <h6 class="text-left font-italic font-weight-bold text-secondary mb-3 mt-4" data-aos="fade-up">Kindly fill out this online form completely:</h6>
+
+                <h5 class="text-secondary text-right font-weight-bold" ><a href="" class="text-secondary text-right font-weight-bold" id="closeFormBtn" onmouseover="closeHoverRed()" onclick="closeForm()">X</a></h5>
 
                     <!-- START -->
-                    <form action="https://rampver.com/testofwpage/#wpcf7-f11670-p11673-o1" method="post" enctype="multipart/form-data">
+                    <form action="https://rampver.com/testofwpage/#wpcf7-f11670-p11673-o1" method="post" enctype="multipart/form-data" data-aos="fade-up">
                         <div style="display: none;">
                             <input type="hidden" name="_wpcf7" value="11670">
                             <input type="hidden" name="_wpcf7_version" value="5.1.4">
@@ -146,7 +162,7 @@
                             <i class="fas fa-upload claimHeader" style="font-size: 170%"></i>
                             <h4 class="claimHeader text-left ml-2">Upload Documents</h4>
                         </div>
-                        <small class="font-italic">Note: If your files are larger than the file size limit, you may email it to <a href="mailto:ofwinsurance@rampver.com">ofwinsurance@rampver.com</a> instead.</small>
+                        <small class="font-italic">Note: If your files are larger than the file size limit, you may email it to <a class="mailtoui" href="mailto:ofwinsurance@rampver.com">ofwinsurance@rampver.com</a> OR upload it <a href="./submit-documents.html">here.</a> instead.</small>
 
                         <br>
                         <br>
@@ -192,7 +208,7 @@
                         </div>
 
                         <p class="text-center mt-4 mb-4">
-                            <input type="submit" value="Submit Application" id="trigger" class="text-white btn btn-lg primerSubmit">
+                            <input type="submit" value="Submit Application" id="trigger" class="text-white btn btn-lg primerSubmit" onclick="preloader()">
                         </p>
 
                         <p class="text-center">
@@ -245,7 +261,7 @@
     </script>
 
 
-    <!-- Validator Script -->
+    <!-- START CUSTOM JS -->
     <script>
         function validatorFN() {
         	var x = document.getElementById("FN");
@@ -302,17 +318,34 @@
 				document.getElementById("errMsgWL").classList.add('d-none');
   			}
         };
-    </script>
-    <!-- End validator Script -->
 
-    <script>
-        document.getElementById("trigger").addEventListener("click", function() {
+        function showForm(){
+            document.getElementById("submitFormshow").classList.remove('d-none');
+        };
+
+        function preloader(){
+            document.getElementById("trigger").addEventListener("click", function() {
             document.getElementById("preloader").classList.remove('d-none');
             setTimeout( () => {
                 document.getElementById("preloader").classList.add('d-none');
             }, 30000);
-        });
+         });
+        }
+
+          function closeHoverRed(){
+            document.getElementById("closeFormBtn").addEventListener("mouseover", function(){
+                document.getElementById("closeFormBtn").remove.classList("text-secondary");
+                document.getElementById("closeFormBtn").add.classList("text-danger");
+            })
+        }
+
+        function closeForm(){
+            document.getElementById("closeFormBtn").addEventListener("mouseover", function(){
+                document.getElementById("submitFormshow").add.classList("d-none");
+            })
+        }
     </script>
+    <!-- End JS -->
 
 
     <!-- Optional JavaScript -->
@@ -322,6 +355,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/b2291eba76.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
 
 </body>
 
