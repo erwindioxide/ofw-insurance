@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>UK Theme Parks</title>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $.getJSON('https://api.sheety.co/c0c4cbca-881c-4fec-8a4a-09dc75236ca0', function(data) {
+    var template = Handlebars.compile($('#item-template').html())
+    $('#items').html(template(data))
+  })
+})
+</script>
+<script id="item-template" type="text/x-handlebars-template">
+{{#each this}}
+<p style="color: #;">Exhange Rate: {{uSD}} USD = {{pHP}} PHP</p>
+<small class="text-white">(as of {{date}} {{time}} PHT) </small>
+{{/each}}
+</script>
+
+</head>
+<body>
+<div id="items">Fetching FX Data...</div>
+
+
+
+
+
+
+</body>
+</html>
