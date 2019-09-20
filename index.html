@@ -89,6 +89,7 @@
         </div> -->
         <!-- SHEETY DATA -->
         <div id="items" class="text-center text-white mt-4">
+            <img src="./img/pinwheel.gif" alt="" class="mr-2" style="width: 25px;">
             <p class="font-italic">Fetching FX data...</p>
         </div>
         <!-- SHEETY DATA -->
@@ -361,13 +362,13 @@
                         <!-- submit buttons -->
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Dismiss</button>
                         <input type="submit" value="Send Primer to my Email!" id="trigger" class="text-white btn primerSubmit" onclick="preloader()">
-
-                        <p class="text-center">
-                            <img src="./img/preloader.gif" id="preloader" class="d-none" style="width: 25px;">
-                        </p>
-
                         <input type="hidden" name="ht" value="2d7ef216bc37d7d95eb23af68d8ca5fb3f0f32cf:MTU2NTA3NzI0MS43Njk0">
                         <input type="hidden" name="mc_signupsource" value="hosted">
+
+                        <p class="text-center">
+                            <img src="./img/preloader.gif" id="preloader" class="mt-3 d-none" style="width: 30px;">
+                        </p>
+
                     </form>
                     <!-- END WP Data Collection -->
                 </div>
@@ -495,7 +496,7 @@
 
         function validatorEmail() {
             var x = document.getElementById("emailOne");
-            x.value = (x.value.toUpperCase()).replace(/^\s+/g, '');
+            x.value = (x.value.toLowerCase()).replace(/^\s+/g, '');
             output = (x.value).split(" ").join("");
             xoutput = output.search("=")
             if (xoutput != -1) {
@@ -524,10 +525,11 @@
 
         function preloader() {
             document.getElementById("trigger").addEventListener("click", function() {
-                document.getElementById("preloader").classList.remove('d-none');
-                setTimeout(() => {
-                    document.getElementById("preloader").classList.add('d-none');
-                }, 30000);
+                // document.getElementById("preloader").classList.remove('d-none');
+                // setTimeout(() => {
+                //     document.getElementById("preloader").classList.add('d-none');
+                // }, 7000);
+                alert("hello!");
             });
         }
     </script>

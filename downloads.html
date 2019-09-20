@@ -285,7 +285,7 @@
 
         function validatorEmail() {
             var x = document.getElementById("emailOne");
-            x.value = (x.value.toUpperCase()).replace(/^\s+/g, '');
+            x.value = (x.value.toLowerCase()).replace(/^\s+/g, '');
             output = (x.value).split(" ").join("");
             xoutput = output.search("=")
             if (xoutput != -1) {
