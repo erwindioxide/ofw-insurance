@@ -2,23 +2,15 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+    <meta name="theme-color" content="#256141">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <link rel="stylesheet" src="./style.css" href="./style.css">
-
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <link rel="icon" href="./img/favicon.png" type="image/png" sizes="16x20">
-
     <title>Rampver OF Insurance</title>
-
 </head>
 
 <body>
@@ -247,8 +239,6 @@
     </div>
     <!-- end of easy steps section -->
 
-
-
     <!-- start of primer section -->
     <div class="primer">
         <br>
@@ -423,10 +413,10 @@
                 <div class="mergeRow dojoDndItem mergeRow-email" id="mergeRow-0" class="col-md-10 mx-auto">
                     <div class="field-group col-md-8 mx-auto">
                         <label for="MERGE0" class="text-white" data-aos="fade-up">
-        <span class="req asterisk" data-aos="fade-up">
-          <small data-aos="fade-up">Email Address*</small>
-        </span>
-      </label>
+                            <span class="req asterisk" data-aos="fade-up">
+                            <small data-aos="fade-up">Email Address*</small>
+                            </span>
+                        </label>
                         <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="" class="form-control " placeholder="Please enter your email address.." data-aos="fade-up">
                         <p class="text-center mb-0 mt-4">
                             <button class="btn btn-outline-success email-submit px-4 mt-3" type="submit" data-aos="fade-up">Subscribe</button>
@@ -456,119 +446,6 @@
         <p class="text-white text-center ">Rampver Financials &copy; 2019</p>
     </footer>
 
-    <script src="./js/main.js"></script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script src="//instant.page/1.1.0" type="f0491115d83bfbf1e7ebb3ef-module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp">
-    </script>
-
-    <script>
-        AOS.init();
-    </script>
-
-    <!-- START CUSTOM JS -->
-    <script>
-        function validatorFN() {
-            var x = document.getElementById("FN");
-            x.value = (x.value.toUpperCase()).replace(/^\s+/g, '');
-            output = (x.value).split(" ").join("");
-            xoutput = output.search("=")
-            if (xoutput != -1) {
-                document.getElementById("errMsgFN").classList.remove('d-none');
-                document.getElementById("trigger").classList.add('d-none');
-            } else {
-                document.getElementById("trigger").classList.remove('d-none');
-                document.getElementById("errMsgFN").classList.add('d-none');
-            }
-        };
-
-        function validatorLN() {
-            var x = document.getElementById("LN");
-            x.value = (x.value.toUpperCase()).replace(/^\s+/g, '');
-            output = (x.value).split(" ").join("");
-            xoutput = output.search("=")
-            if (xoutput != -1) {
-                document.getElementById("errMsgLN").classList.remove('d-none');
-                document.getElementById("trigger").classList.add('d-none');
-            } else {
-                document.getElementById("trigger").classList.remove('d-none');
-                document.getElementById("errMsgLN").classList.add('d-none');
-            }
-        };
-
-        function validatorEmail() {
-            var x = document.getElementById("emailOne");
-            x.value = (x.value.toLowerCase()).replace(/^\s+/g, '');
-            output = (x.value).split(" ").join("");
-            xoutput = output.search("=")
-            if (xoutput != -1) {
-                document.getElementById("errMsgEmail").classList.remove('d-none');
-                document.getElementById("trigger").classList.add('d-none');
-            } else {
-                document.getElementById("trigger").classList.remove('d-none');
-                document.getElementById("errMsgEmail").classList.add('d-none');
-            }
-        };
-
-        function validatorWL() {
-            var x = document.getElementById("WL");
-            x.value = (x.value.toUpperCase()).replace(/^\s+/g, '');
-            output = (x.value).split(" ").join("");
-            xoutput = output.search("=")
-            if (xoutput != -1) {
-                document.getElementById("errMsgWL").classList.remove('d-none');
-                document.getElementById("trigger").classList.add('d-none');
-            } else {
-                document.getElementById("trigger").classList.remove('d-none');
-                document.getElementById("errMsgWL").classList.add('d-none');
-            }
-        };
-
-
-        function preloader() {
-            document.getElementById("trigger").addEventListener("click", function() {
-                // document.getElementById("preloader").classList.remove('d-none');
-                // setTimeout(() => {
-                //     document.getElementById("preloader").classList.add('d-none');
-                // }, 7000);
-                alert("hello!");
-            });
-        }
-    </script>
-    <!-- End JS -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <!-- FX RATE c/o sheety -->
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $.getJSON('https://api.sheety.co/c0c4cbca-881c-4fec-8a4a-09dc75236ca0', function(data) {
-                var template = Handlebars.compile($('#item-template').html())
-                $('#items').html(template(data))
-            })
-        })
-    </script>
-
-    <script id="item-template" type="text/x-handlebars-template">
-        {{#each this}}
-        <h6 class="mb-0 text-white font-weight-bold">FX Rate: USD {{uSD}}.00 = PHP {{pHP}}</h6>
-        <small class="text-white font-italic">(as of {{date}} {{time}} PHT) </small> {{/each}}
-    </script>
-
-    <!-- FX RATE c/o sheety -->
-
-    <script src="https://kit.fontawesome.com/b2291eba76.js"></script>
-
-    <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script type="f0491115d83bfbf1e7ebb3ef-text/javascript">
         window.fbAsyncInit = function() {
@@ -588,9 +465,31 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
 
-    <!-- Your customer chat code -->
     <div class="fb-customerchat" attribution=setup_tool page_id="355427532453" theme_color="#256141">
     </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/validator.js">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="//instant.page/1.1.0" type="f0491115d83bfbf1e7ebb3ef-module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp">
+    </script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+    <!-- FX RATE c/o sheety -->
+    <script src="./js/getSheety.js"></script>
+    <script id="item-template" type="text/x-handlebars-template">
+        {{#each this}}
+        <h6 class="mb-0 text-white font-weight-bold">FX Rate: USD {{uSD}}.00 = PHP {{pHP}}</h6>
+        <small class="text-white font-italic">(as of {{date}} {{time}} PHT) </small> {{/each}}
+    </script>
+    <!-- FX RATE c/o sheety -->
+    </script>
+    <script src="https://kit.fontawesome.com/b2291eba76.js"></script>
 
 </body>
 
