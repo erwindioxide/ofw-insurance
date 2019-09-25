@@ -306,4 +306,13 @@ footer p {
   color: #b74d48;
 }
 
+.swal-title {
+  color: #256141;
+}
+
+.swal-text {
+  margin-top: 1rem;
+  font-size: 25px;
+}
+
 /*# sourceMappingURL=style.css.map */

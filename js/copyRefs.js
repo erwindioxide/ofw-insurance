@@ -20,10 +20,10 @@ function copyToClipboard(elementId) {
     document.body.removeChild(aux);
 
     swal({
-        title: "Copied to clipboard!",
+        title: "Copied for pasting!",
         text: text,
         icon: "success",
-        timer: "1500",
+        timer: "2250",
+        button: false
     });
-
 }
