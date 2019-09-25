@@ -85,9 +85,13 @@
                     <div data-aos="fade-up">
                         <h5 class="text-left claimHeader mt-3">Bank Account Details</h5>
                         <hr>
-                        <p class="text-left">Account Name: Paramount Life and General Insurance Corporation</p>
+                        <p class="text-left" id="accName">Account Name: Paramount Life and General Insurance Corporation</p>
                         <p class="text-left">Bank Name: Banco de Oro</p>
-                        <p class="text-left">BDO Reference Number : 074686206</p>
+                        <div class="d-flex">
+                            <p class="text-left">BDO Reference Number:</p>
+                            <p id="p1" class="ml-2 claimHeader" value="074686206">074686206</p>
+                            <a href="#accName" class="claimHeader ml-2 lead" onclick="copyToClipboard('p1')"><i class="far fa-copy"></i></a>
+                        </div>
                     </div>
 
                     <br>
@@ -106,14 +110,22 @@
 
                     <div data-aos="fade-up">
                         <h6 class="text-left claimHeader">For Dollar Deposits/Transfers/Remittances:</h6>
-                        <p class="text-left">USD Account Number: 107310039316</p>
+                        <div class="d-flex">
+                            <p class="text-left">USD Account Number:</p>
+                            <p id="p2" class="ml-2 claimHeader" value="074686206">107310039316</p>
+                            <a href="#accName" class="claimHeader ml-2 lead" onclick="copyToClipboard('p2')"><i class="far fa-copy"></i></a>
+                        </div>
                     </div>
 
                     <br>
 
                     <div data-aos="fade-up">
                         <h6 class="text-left claimHeader">For Peso Deposits/Transfers/Remittances:</h6>
-                        <p class="text-left">PHP Account Number: 007310056172</p>
+                        <div class="d-flex">
+                            <p class="text-left">PHP Account Number:</p>
+                            <p id="p3" class="ml-2 claimHeader" value="074686206">007310056172</p>
+                            <a href="#accName" class="claimHeader ml-2 lead" onclick="copyToClipboard('p3')"><i class="far fa-copy"></i></a>
+                        </div>
                     </div>
 
                     <br>
@@ -154,9 +166,12 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/copyRefs.js"></script>
+
     <script>
         AOS.init();
     </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -173,6 +188,7 @@
         <small class="font-italic mt-3"> Exhange rate as of {{date}} {{time}} PHT. </small> {{/each}}
     </script>
     <!-- FX RATE c/o sheety -->
+
 </body>
 
 </html>
